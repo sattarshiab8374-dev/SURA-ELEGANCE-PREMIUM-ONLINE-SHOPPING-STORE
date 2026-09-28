@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SURA ELEGANCE | Premium Online Shopping</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    .cart {
+      font-size: 22px;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 520px;
+      background: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+      ),
+      url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+
+      display: flex;
+      align-items: center;
+      padding: 60px 7%;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d9a35f;
+      color: white;
+      padding: 16px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Categories */
+    .section {
+      padding: 60px 5%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 35px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .category {
+      background: white;
+      padding: 30px 15px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .category span {
+      display: block;
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .product img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .add-cart {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 480px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SURA ELEGANCE</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#">Wishlist ♡</a>
+    </nav>
+
+    <div class="cart">🛒 0</div>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Premium Online Shopping</h1>
+
+      <p>
+        Discover beautiful fashion, lifestyle and quality products
+        for every occasion.
+      </p>
+
+      <a href="#products" class="btn">SHOP NOW</a>
+    </div>
+  </section>
+
+
+  <section class="section" id="categories">
+
+    <h2 class="section-title">Shop By Category</h2>
+
+    <p class="section-subtitle">
+      Explore our wide range of products
+    </p>
+
+    <div class="categories">
+
+      <div class="category">
+        <span>👗</span>
+        Ladies Fashion
+      </div>
+
+      <div class="category">
+        <span>👕</span>
+        T-Shirts
+      </div>
+
+      <div class="category">
+        <span>👜</span>
+        Bags
+      </div>
+
+      <div class="category">
+        <span>👟</span>
+        Shoes
+      </div>
+
+      <div class="category">
+        <span>💄</span>
+        Beauty
+      </div>
+
+      <div class="category">
+        <span>💍</span>
+        Jewellery
+      </div>
+
+      <div class="category">
+        <span>🏠</span>
+        Home & Living
+      </div>
+
+      <div class="category">
+        <span>📱</span>
+        Electronics
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="section" id="products">
+
+    <h2 class="section-title">Featured Products</h2>
+
+    <p class="section-subtitle">
+      Premium products from SURA ELEGANCE
+    </p>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80">
+
+        <div class="product-info">
+          <h3>Premium Ladies Dress</h3>
+          <div class="price">৳ 1,200</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80">
+
+        <div class="product-info">
+          <h3>Premium T-Shirt</h3>
+          <div class="price">৳ 500</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80">
+
+        <div class="product-info">
+          <h3>Premium Fashion Collection</h3>
+          <div class="price">৳ 950</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80">
+
+        <div class="product-info">
+          <h3>Premium Shoes</h3>
+          <div class="price">৳ 1,500</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <h2>SURA ELEGANCE</h2>
+    <p>Premium Online Shopping Store</p>
+    <p>© 2026 SURA ELEGANCE. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
